@@ -2,46 +2,46 @@
 
 ## Description
 
-This Node.js command-line application uses MYSQL and Inquirer to help you manage a company's employee database!
+This application uses the Express.js API, configured by Sequelize to interact with a MySQL database to run the back end of an e-commerce site!
 
-When the application is started, you'll be presented with the option to View All, View all Employees, Managers, Departments, or Roles, Add an Employee, Department, or Role, Update a Role, and Change Manager.
+This back end will have your e-commerce company website compete with the rest!
 
-* The View options will display a formatted table including data specific to your choice. 
-* The Add options will prompt you to enter new data coorelating to the option you would like to add.
-* The Update and Change options will enable you to edit an existing emloyee's role or manager.
+* Keep your database organized sorting your product with catagories and relevant tags!
+* Create, Update, or Delete products as needed to keep your prices and stock up to date!
 
 
 ## Installation
 
 [SSH of repo]
-git@github.com:Chis517/team-profile-gen.git
+git@github.com:Chis517/E-commerce-Back-End.git
 
-Clone the GitHub repo with the key above in your command line, then run npm i or npm install to download the packages to run the application.
-
-Within the db folder, change the user and password values in the connection.js file to your own credentials if required.
-
-After npm installation is complete, run mysql in the command line and enter the following:
-  * source db/db.sql
-  * source db/schema.sql
-  Only source the seeds file below for reference
-  * source db/seeds.sql 
-
-After you source the sql files needed, run npm start in the command line to start the application. 
+1. Clone the GitHub repo with the key above in your command line
+2. Run npm i or npm install to download the packages required to run the application.
+3. Create a .env file and add the following to your new file:
+  DB_NAME='ecommerce_db'
+  DB_USER='your-user'
+  DB_PW='your-password'
+  * Note: You will need to enter your MySQL credentials for the values of DB_USER and DB_PW
+4. Run mysql in the command line and enter the following:
+  * USE ecommerce_db
+  * source db/schema.sql;
+5. In a seperate command line window, run npm start to start your application
 
 
 ## Technologies
 
-* Inquirer package
-* MYSQL
-* Express
-* console.table
 * JavaScript
+* Node.js
+* Express
+* MYSQL
+* Sequelize
+* dotenv
 
 
 ## URL Link and demo
 
 * [URL of repo]
-(https://github.com/Chis517/employee-tracker)
+(https://github.com/Chis517/E-commerce-Back-End)
 
 * [URL of video demo]
-(https://watch.screencastify.com/v/z1zbldsA07l5T2ZoyIOL)
+(https://watch.screencastify.com/v/F2ruyAeJ0bUT89bGPuRf)
